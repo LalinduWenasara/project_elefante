@@ -31,9 +31,10 @@ db.collection("detections").onSnapshot((querySnapshot) => {
         
            
         // }
-
+        var cas=doc.data().latitude;
+        var cas2=doc.data().longitude;
         list_div.innerHTML+="<div class ='list-item'> <h3>"  + doc.data().name /* name can change to any thing you want.._*/ 
-        +"</h3> <p>Name :  "+doc.data().name+ "  &nbsp &nbsp &nbsp- &nbsp &nbsp &nbsp Time :  "+doc.data().time+ " &nbsp &nbsp &nbsp- &nbsp &nbsp &nbspLongitude :  "+doc.data().longitude+ " &nbsp &nbsp &nbsp- &nbsp &nbsp &nbspLatitude :  "+doc.data().latitude+ "</p> </div>"
+        +"</h3> <p>Name :  "+doc.data().name+ "  &nbsp &nbsp &nbsp- &nbsp &nbsp &nbsp Time :  "+doc.data().time+ " &nbsp &nbsp &nbsp- &nbsp &nbsp &nbspLongitude :  "+doc.data().longitude+ " &nbsp &nbsp &nbsp- &nbsp &nbsp &nbspLatitude :  "+doc.data().latitude+ "</p> <div><a href='map1.php?locationlat="+cas+"&locationlong="+cas2+"'>map</a></div></div>"
      });
  });
 
