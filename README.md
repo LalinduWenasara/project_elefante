@@ -13,7 +13,7 @@ Self-Responding Automated Detection and Wildlife Alert System
 
 
 
-
+[<p align="center"><img src="https://github.com/LalinduWenasara/project_elefante/blob/main/sample.jpg" width="600"></p>]
 
 
 
